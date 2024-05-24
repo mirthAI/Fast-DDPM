@@ -6,7 +6,7 @@ Fast-DDPM: Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Im
 
 (Currently under review)
 
-Fast-DDPM is a simple yet effective approach which is capable of improving training speed, sampling speed, and generation quality simultaneously. Fast-DDPM trains and samples using only 10 time steps, reducing the training time to 0.2$\times$ and the sampling time to 0.01$\times$ compared to DDPM.
+Fast-DDPM is a simple yet effective approach which is capable of improving training speed, sampling speed, and generation quality simultaneously. Fast-DDPM trains and samples using only 10 time steps, reducing the training time to 0.2x and the sampling time to 0.01x compared to DDPM.
 
 The code is only for research purposes. If you have any questions regarding how to use this code, feel free to contact Hongxu Jiang (hongxu.jiang@medicine.ufl.edu).
 
