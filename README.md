@@ -2,7 +2,9 @@
 
 Official PyTorch implementation of: 
 
-Fast-DDPM: Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation (Currently under review)
+Fast-DDPM: Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation 
+
+(Currently under review)
 
 Fast-DDPM is a simple yet effective approach which is capable of improving training speed, sampling speed, and generation quality simultaneously. Fast-DDPM trains and samples using only 10 time steps, reducing the training time to 0.2$\times$ and the sampling time to 0.01$\times$ compared to DDPM.
 
@@ -37,7 +39,6 @@ The code is only for research purposes. If you have any questions regarding how 
 * After downloading, extract the file and put it into folder "data/". The directory structure should be as follows:
 
 ```bash
-.
 ├── configs
 │
 ├── data
@@ -70,7 +71,7 @@ python fast_ddpm_main.py --config {DATASET}.yml --dataset {DATASET_NAME} --exp {
 ```
 
 where 
-- `DATASET_NAME` should be among `LDFDCT` for image denoising task, `BRATS` for image-to-image translation task and `PMUB` for multi image super-resolution task.
+- `DATASET_NAME` should be selected among `LDFDCT` for image denoising task, `BRATS` for image-to-image translation task and `PMUB` for multi image super-resolution task.
 - `SAMPLING STRATEGY` controls the scheduler sampling strategy proposed in the paper(either uniform or non-uniform).
 - `STEPS` controls how many timesteps used in the training and inference process. It should be an integer less than 1000 for Fast-DDPM.
 
@@ -86,7 +87,7 @@ python ddpm_main.py --config {DATASET}.yml --dataset {DATASET_NAME} --exp {PROJE
 ```
 
 where 
-- `DATASET_NAME` should be among `LDFDCT` for image denoising task, `BRATS` for image-to-image translation task and `PMUB` for multi image super-resolution task.
+- `DATASET_NAME` should be selected among `LDFDCT` for image denoising task, `BRATS` for image-to-image translation task and `PMUB` for multi image super-resolution task.
 - `STEPS` controls how many timesteps used in the training and inference process. It should be 1000 in the setting of this paper.
 
 
