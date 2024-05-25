@@ -99,3 +99,13 @@ where
 
 ## Citations
 If you use our code or dataset, please cite our paper as below:
+```bibtex
+@misc{jiang2024fast,
+      title={Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation}, 
+      author={Hongxu Jiang and Muhammad Imran and Linhai Ma and Teng Zhang and Yuyin Zhou and Muxuan Liang and Kuang Gong and Wei Shao},
+      year={2024},
+      eprint={2405.14802},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
+}
+```
