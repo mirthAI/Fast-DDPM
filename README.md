@@ -74,7 +74,7 @@ python fast_ddpm_main.py --config {DATASET}.yml --dataset {DATASET_NAME} --exp {
 
 where 
 - `DATASET_NAME` should be selected among `LDFDCT` for image denoising task, `BRATS` for image-to-image translation task and `PMUB` for multi image super-resolution task.
-- `SAMPLING STRATEGY` controls the scheduler sampling strategy proposed in the paper(either uniform or non-uniform).
+- `SAMPLING STRATEGY` controls the scheduler sampling strategy proposed in the paper (either uniform or non-uniform).
 - `STEPS` controls how many timesteps used in the training and inference process. It should be an integer less than 1000 for Fast-DDPM.
 
 
