@@ -7,7 +7,7 @@ Official PyTorch implementation of:
 We propose Fast-DDPM, is a simple yet effective approach that improves training speed, sampling speed, and generation quality of diffusion models simultaneously. Fast-DDPM trains and samples using only 10 time steps, reducing the training time to 0.2x and the sampling time to 0.01x compared to DDPM.
 
 <p align="center">
-  <img src="Images/Overview.png" alt="DDPM vs. Fast-DDPM" width="750">
+  <img src="Overview.png" alt="DDPM vs. Fast-DDPM" width="750">
 </p>
 
 The code is only for research purposes. If you have any questions regarding how to use this code, feel free to contact Hongxu Jiang (hongxu.jiang@medicine.ufl.edu).
