@@ -2,7 +2,7 @@
 
 Official PyTorch implementation of: 
 
-[Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation](https://arxiv.org/abs/2405.14802) 
+[Fast-DDPM: Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation](https://arxiv.org/abs/2405.14802) 
 
 We propose Fast-DDPM, a simple yet effective approach that improves training speed, sampling speed, and generation quality of diffusion models simultaneously. Fast-DDPM trains and samples using only 10 time steps, reducing the training time to 0.2x and the sampling time to 0.01x compared to DDPM.
 
