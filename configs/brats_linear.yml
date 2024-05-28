@@ -1,8 +1,7 @@
 data:
     dataset: "PMUB"
-    train_dataroot: "data/train2D"
-    val_dataroot: "data/PMUB-val"
-    sample_dataroot: "data/val2D"
+    train_dataroot: "data/Brats_train"
+    sample_dataroot: "data/Brats_test"
     image_size: 256
     channels: 1
     logit_transform: false
