@@ -103,7 +103,7 @@ where
 If you use our code or dataset, please cite our paper as below:
 ```bibtex
 @article{jiang2024fast,
-  title={Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation},
+  title={Fast-DDPM: Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation},
   author={Jiang, Hongxu and Imran, Muhammad and Ma, Linhai and Zhang, Teng and Zhou, Yuyin and Liang, Muxuan and Gong, Kuang and Shao, Wei},
   journal={arXiv preprint arXiv:2405.14802},
   year={2024}
