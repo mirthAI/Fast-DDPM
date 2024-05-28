@@ -2,7 +2,7 @@
 
 Official PyTorch implementation of: 
 
-[Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation](https://arxiv.org/abs/2405.14802v1) 
+[Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation](https://arxiv.org/abs/2405.14802) 
 
 We propose Fast-DDPM, is a simple yet effective approach that improves training speed, sampling speed, and generation quality of diffusion models simultaneously. Fast-DDPM trains and samples using only 10 time steps, reducing the training time to 0.2x and the sampling time to 0.01x compared to DDPM.
 
@@ -31,7 +31,7 @@ The code is only for research purposes. If you have any questions regarding how 
 - Prostate-MRI-US-Biopsy dataset
 - LDCT-and-Projection-data dataset
 - BraTS 2018 dataset
-- The processed dataset can be accessed here: https://drive.google.com/file/d/1u9OWKxWCNGLadNEaiho3uUFGuGL2KXl9/view?usp=drive_link.
+- The processed dataset can be accessed here: https://drive.google.com/file/d/1kF0g8fMR5XPQ2FTbutfTQ-hwG_mTqerx/view?usp=drive_link.
 
 ## Usage
 ### 1. Git clone or download the codes.
@@ -48,8 +48,8 @@ The code is only for research purposes. If you have any questions regarding how 
 │	├── LD_FD_CT_test
 │	├── PMUB-train
 │	├── PMUB-test
-│	├── train2D
-│	└── val2D
+│	├── Brats_train
+│	└── Brats_test
 │
 ├── datasets
 │
@@ -60,6 +60,8 @@ The code is only for research purposes. If you have any questions regarding how 
 └── runners
 
 ```
+
+* 
 
 
 ### 3. Training/Sampling a Fast-DDPM model
@@ -75,7 +77,7 @@ python fast_ddpm_main.py --config {DATASET}.yml --dataset {DATASET_NAME} --exp {
 where 
 - `DATASET_NAME` should be selected among `LDFDCT` for image denoising task, `BRATS` for image-to-image translation task and `PMUB` for multi image super-resolution task.
 - `SAMPLING STRATEGY` controls the scheduler sampling strategy proposed in the paper (either uniform or non-uniform).
-- `STEPS` controls how many timesteps used in the training and inference process. It should be an integer less than 1000 for Fast-DDPM.
+- `STEPS` controls how many timesteps used in the training and inference process. It should be an integer less than 1000 for Fast-DDPM, which is 10 by default.
 
 
 ### 4. Training/Sampling a DDPM model
@@ -100,12 +102,10 @@ where
 ## Citations
 If you use our code or dataset, please cite our paper as below:
 ```bibtex
-@misc{jiang2024fast,
-      title={Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation}, 
-      author={Hongxu Jiang and Muhammad Imran and Linhai Ma and Teng Zhang and Yuyin Zhou and Muxuan Liang and Kuang Gong and Wei Shao},
-      year={2024},
-      eprint={2405.14802},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
+@article{jiang2024fast,
+  title={Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation},
+  author={Jiang, Hongxu and Imran, Muhammad and Ma, Linhai and Zhang, Teng and Zhou, Yuyin and Liang, Muxuan and Gong, Kuang and Shao, Wei},
+  journal={arXiv preprint arXiv:2405.14802},
+  year={2024}
 }
 ```
