@@ -36,7 +36,11 @@ The code is only for research purposes. If you have any questions regarding how 
 ## Usage
 ### 1. Git clone or download the codes.
 
-### 2. Prepare data
+### 2. Pretrained model weights
+* We provide pretrained model weights for all three tasks, where you can access them here: https://drive.google.com/file/d/1ndS-eLegqwCOUoLT1B-HQiqRQqZUMKVF/view?usp=sharing.
+* As shown in ablation study, the defaulted 10 time steps may not be optimal for every task, you're more welcome to train Fast-DDPM model on your dataset using different settings.
+
+### 3. Prepare data
 * Please download our processed dataset or download from the official websites.
 * After downloading, extract the file and put it into folder "data/". The directory structure should be as follows:
 
@@ -61,10 +65,7 @@ The code is only for research purposes. If you have any questions regarding how 
 
 ```
 
-* 
-
-
-### 3. Training/Sampling a Fast-DDPM model
+### 4. Training/Sampling a Fast-DDPM model
 * Please make sure that the hyperparameters such as scheduler type and timesteps are consistent between training and sampling.
 * The total number of time steps is defaulted as 1000 in the paper, so the number of involved time steps for Fast-DDPM should be less than 1000 as an integer.
 ```
@@ -80,7 +81,7 @@ where
 - `STEPS` controls how many timesteps used in the training and inference process. It should be an integer less than 1000 for Fast-DDPM, which is 10 by default.
 
 
-### 4. Training/Sampling a DDPM model
+### 5. Training/Sampling a DDPM model
 * Please make sure that the hyperparameters such as scheduler type and timesteps are consistent between training and sampling.
 * The total number of time steps is defaulted as 1000 in the paper, so the number of time steps for DDPM is defaulted as 1000.
 ```
