@@ -103,10 +103,11 @@ where
 ## Citations
 If you use our code or dataset, please cite our paper as below:
 ```bibtex
-@article{jiang2024fast,
-  title={Fast-DDPM: Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation},
-  author={Jiang, Hongxu and Imran, Muhammad and Ma, Linhai and Zhang, Teng and Zhou, Yuyin and Liang, Muxuan and Gong, Kuang and Shao, Wei},
-  journal={arXiv preprint arXiv:2405.14802},
-  year={2024}
+@article{jiang2025fast,
+  title={Fast-DDPM: Fast denoising diffusion probabilistic models for medical image-to-image generation},
+  author={Jiang, Hongxu and Imran, Muhammad and Zhang, Teng and Zhou, Yuyin and Liang, Muxuan and Gong, Kuang and Shao, Wei},
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  year={2025},
+  publisher={IEEE}
 }
 ```
