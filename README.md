@@ -38,6 +38,7 @@ The code is only for research purposes. If you have any questions regarding how 
 
 ### 2. Pretrained model weights
 * We provide pretrained model weights for all three tasks, where you can access them here: https://drive.google.com/file/d/1ndS-eLegqwCOUoLT1B-HQiqRQqZUMKVF/view?usp=sharing.
+* Pretrained model weights are also available on [Hugging Face](https://huggingface.co/SebastianJiang/FastDDPM).
 * As shown in ablation study, the defaulted 10 time steps may not be optimal for every task, you're more welcome to train Fast-DDPM model on your dataset using different settings.
 
 ### 3. Prepare data
